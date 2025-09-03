@@ -6,7 +6,7 @@ This guide walks you through the process of authenticating with GitHub using the
 ## Prerequisites
 - Windows OS with PowerShell
 - Internet connection
-- GitHub account (in this example: `Vynr1504`)
+- GitHub account (in this example: `<Your_Github_Username>`)
 
 ## Step-by-Step Process
 
@@ -15,7 +15,7 @@ This guide walks you through the process of authenticating with GitHub using the
 First, set up your global Git configuration with your GitHub username:
 
 ```powershell
-git config --global user.name "Vynr1504"
+git config --global user.name "<Your_Github_Username>"
 ```
 
 Verify or set your email address:
@@ -97,7 +97,7 @@ Expected success output:
 ✓ Authentication complete.
 - gh config set -h github.com git_protocol https
 ✓ Configured git protocol
-✓ Logged in as Vynr1504
+✓ Logged in as <Your_Github_Username>
 ```
 
 ### 6. Verify Authentication
@@ -111,7 +111,7 @@ gh auth status
 Expected output:
 ```
 github.com
-  ✓ Logged in to github.com account Vynr1504 (keyring)
+  ✓ Logged in to github.com account <Your_Github_Username> (keyring)
   - Active account: true
   - Git operations protocol: https
   - Token: gho_************************************
@@ -227,3 +227,4 @@ GitHub CLI stores configuration in:
 **Created**: September 3, 2025  
 **Author**: GitHub Copilot  
 **Last Updated**: September 3, 2025
+
